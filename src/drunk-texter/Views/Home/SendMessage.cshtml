@@ -1,0 +1,18 @@
+﻿@{
+}
+
+@model drunk_texter.Models.Message
+
+<h2>Send A Message</h2>
+<hr />
+<form asp-controller="Home" asp-action="SendMessage" method="post">
+    <label asp-for="To"></label>
+    <input asp-for="To"/>
+    <label asp-for="From"></label>
+    <input asp-for="From" />
+    <label asp-for="Body"></label>
+    <input asp-for="Body" />
+    <input type="submit" value="Send" />
+</form>
+
+<a asp-controller="Home" asp-action="Index">Home</a>

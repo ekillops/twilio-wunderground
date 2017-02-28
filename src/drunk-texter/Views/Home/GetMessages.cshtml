@@ -1,0 +1,21 @@
+﻿@{
+}
+
+<h2>All Messages</h2>
+<hr />
+
+<ol>
+    @foreach(var message in Model)
+    {
+        <li>
+            <ul>
+                <li>To: @message.To</li>
+                <li>From: @message.From</li>
+                <li>Body: @message.Body</li>
+                <li>Status: @message.Status</li>
+            </ul>
+        </li>
+    }
+</ol>
+
+<a asp-controller="Home" asp-action="Index">Home</a>

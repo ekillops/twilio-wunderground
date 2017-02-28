@@ -1,0 +1,12 @@
+﻿@{
+}
+
+<h3>Weather in @Model.current_observation.display_location.full</h3>
+
+<p>Current condition: @Model.current_observation.weather</p>
+<p>Temperature: @Model.current_observation.temperature_string</p>
+
+<p>Moon phase: @Model.moon_phase.phaseofMoon</p>
+
+<p>Sunrise: @Model.sun_phase.sunrise.hour:@Model.sun_phase.sunrise.minute</p>
+<p>Sunset: @Model.sun_phase.sunset.hour:@Model.sun_phase.sunset.minute</p>
